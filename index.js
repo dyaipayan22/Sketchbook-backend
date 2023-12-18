@@ -7,7 +7,7 @@ const app = express();
 const isDev = app.settings.env === 'development';
 const URL = isDev
   ? 'http://localhost:3000'
-  : 'https://sketchbook-sigma.vercel.app';
+  : 'https://sketchbook-dyaipayan22.vercel.app/';
 app.use(cors({ origin: URL }));
 const httpServer = createServer(app);
 const io = new Server(httpServer, { cors: URL });
